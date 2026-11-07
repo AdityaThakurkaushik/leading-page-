@@ -11,7 +11,7 @@
 *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0,#2b1745 0,transparent 48%),#09070e;color:#fff;font-family:Arial,sans-serif;display:flex;flex-direction:column}
 .page-link{position:fixed;inset:0;z-index:1}
 header{width:min(100% - 36px,980px);margin:auto;padding:22px 0;display:flex;align-items:center;justify-content:center;position:relative;z-index:2;pointer-events:none}
-.logo{width:228px;height:228px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 0 30px #dcae5160;background:#171020}
+.logo{width:228px;height:228px;border-radius:50%;object-fit:contain;border:3px solid var(--gold);box-shadow:0 0 30px #dcae5160;background:#171020}
 main{width:min(100% - 36px,760px);margin:auto;flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px 0 48px;position:relative;z-index:2;pointer-events:none}
 .content{width:100%}
 .kicker{font-size:11px;letter-spacing:.24em;color:var(--gold);font-weight:700}
@@ -19,11 +19,11 @@ h1{font-family:Georgia,serif;font-size:clamp(36px,8vw,60px);line-height:1.08;mar
 h1 span{color:var(--gold)}
 p{color:var(--muted);font-size:16px;line-height:1.7;max-width:530px;margin:0 auto}
 .tag{margin:18px auto 25px;color:#ead7ff;font-size:14px}
-.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 25px;border-radius:12px;background:linear-gradient(135deg,#f7d98f,#d9a640);color:#1b1122;text-decoration:none;font-weight:800;box-shadow:0 8px 28px #d9a64030;position:relative;z-index:3;pointer-events:auto;transition:transform .2s}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;width:min(100%,440px);min-height:58px;margin:0 auto;padding:16px 28px;border-radius:12px;background:linear-gradient(135deg,#f7d98f,#d9a640);color:#1b1122;text-decoration:none;font-weight:800;font-size:16px;box-shadow:0 8px 28px #d9a64030;position:relative;z-index:3;pointer-events:auto;transition:transform .2s}
 .cta:hover{transform:translateY(-2px)}
 .note{font-size:12px;margin-top:16px;color:#9d93aa}
 footer{text-align:center;padding:18px;color:#82798e;font-size:11px;position:relative;z-index:2;pointer-events:none}
-@media(max-width:480px){header{padding:18px 0}.logo{width:204px;height:204px}main{padding:14px 0 36px}p{font-size:14px}.cta{width:100%;max-width:340px}}
+@media(max-width:480px){header{padding:18px 0}.logo{width:204px;height:204px}main{padding:14px 0 36px}p{font-size:14px}.cta{width:100%;max-width:440px;min-height:60px}}
 </style>
 </head>
 <body>
